@@ -209,12 +209,8 @@ For maintainers:
 1. Update version in `pyproject.toml`
 2. Update CHANGELOG.md
 3. Create git tag: `git tag v1.0.0`
-4. Build: `python -m build`
-5. Upload: `twine upload dist/*`
-6. Push tag: `git push origin v1.0.0`
-7. Create GitHub release
-
-See [PUBLISHING.md](PUBLISHING.md) for details.
+4. Push tag: `git push origin v1.0.0`
+5. Create GitHub release
 
 ## Questions?
 

@@ -13,14 +13,6 @@ A Python tool for bundling multiple Python modules into single executable script
 
 ## Installation
 
-### From PyPI (recommended)
-
-```bash
-pip install pypacker
-```
-
-### From Source
-
 ```bash
 git clone https://github.com/lasselauch/pypacker.git
 cd pypacker
@@ -229,23 +221,6 @@ exec(code, sys.modules["product.module"].__dict__)
 - Dynamic imports (`__import__()`) are not rewritten
 - Relative imports within packed modules need special handling
 
-## Publishing to PyPI
-
-This package is published on PyPI. To publish updates:
-
-```bash
-# Install build tools
-pip install build twine
-
-# Build distribution
-python -m build
-
-# Upload to PyPI
-twine upload dist/*
-```
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
 ## Comparison with Alternatives
 
 | Tool | Language | Python 2 | Python 3 | Size | Dependencies |
@@ -278,18 +253,6 @@ This is a Python port of the original npm [pypacker](https://www.npmjs.com/packa
 
 - 🐛 **Issues**: [GitHub Issues](https://github.com/lasselauch/pypacker/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/lasselauch/pypacker/discussions)
-- 📧 **Email**: lasse@lasselauch.com
-
-## Changelog
-
-### v1.0.0 (2025-01-XX)
-
-- Initial release
-- Python 2.7 and 3.5+ support
-- Recursive dependency resolution
-- Import rewriting
-- Command-line interface
-- Python API
 
 ---
 

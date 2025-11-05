@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pypacker"
 version = "1.0.0"
 authors = [
-    {name = "Lasse Lauch", email = "lasse@lasselauch.com"},
+    {name = "Lasse Lauch", email = "feed@lasselauch.com"},
 ]
 description = "A Python tool for bundling Python modules into single executable scripts"
 readme = "README.md"
