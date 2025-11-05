@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypacker"
+version = "1.0.0"
+authors = [
+    {name = "Lasse Lauch", email = "lasse@lasselauch.com"},
+]
+description = "A Python tool for bundling Python modules into single executable scripts"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Code Generators",
+]
+keywords = ["packaging", "bundling", "python", "modules", "cinema4d", "plugin"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/lasselauch/pypacker"
+Repository = "https://github.com/lasselauch/pypacker"
+Issues = "https://github.com/lasselauch/pypacker/issues"
+
+[project.scripts]
+pypacker = "pypacker.__main__:main"
+
+[tool.setuptools]
+packages = ["pypacker"]
